@@ -24,7 +24,7 @@ class App extends Component {
         <h1>React Animations</h1>
         {
           this.state.modalOpen &&
-          <React.Fragment>
+          <div>
             <Modal
               show={this.state.modalOpen}
               closed={this.closeModal}
@@ -32,7 +32,7 @@ class App extends Component {
             <Backdrop
               show={this.state.modalOpen}
             />
-          </React.Fragment>
+          </div>
         }
         <button
           className="Button"
