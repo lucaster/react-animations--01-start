@@ -23,7 +23,7 @@ class App extends Component {
       <div className="App">
         <h1>React Animations</h1>
         {
-          this.state.modalOpen &&
+          // this.state.modalOpen &&
           <div>
             <Modal
               show={this.state.modalOpen}
