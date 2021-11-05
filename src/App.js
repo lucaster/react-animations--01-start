@@ -6,7 +6,7 @@ import Modal from "./components/Modal/Modal";
 
 class App extends Component {
   state = {
-    modalOpen: false
+    modalOpen: void 0
   };
   showModal = () => {
     this.setState({

@@ -23,6 +23,9 @@
 .ModalClosed {
   animation: closeModal 300ms ease-out forwards;
 }
+.ModalAbsent {
+  display: none;
+}
 
 /* @keyframes describes the animation */
 /* each object is a state */
