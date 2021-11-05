@@ -10,6 +10,8 @@
   top: 30%;
   left: 25%;
   width: 50%;
+
+  /* whenever any property changes, animathe that change this way: */
   transition: all 300ms ease-out;
 }
 
