@@ -29,9 +29,7 @@ class App extends Component {
             className="Button"
             onClick={() =>
               this.setState(prevState =>
-                ({
-                  showBlock: !prevState.showBlock
-                })
+                ({ showBlock: !prevState.showBlock })
               )
             }
           >
@@ -39,12 +37,16 @@ class App extends Component {
           </button>
           <br />
           <Transition
+            // in: similar to *ngIf. exp change will trigger state change (exited -> entering -> entered -> exiting -> exited)
             in={this.state.showBlock}
+            // time to go from entering to entered and from exiting to exited
+            // you actually animate entering -> entered and exiting -> exited
             timeout={300}
             mountOnEnter
             unmountOnExit
           >
             {
+              // paint the element based on the transition state state
               state => (
                 <div
                   style={{
